@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>森森天氣</title>
+    <meta name="description" content="賢賢天氣：以可愛又療癒的風格呈現桃園最新天氣，包含時段預報、降雨率、最高最低溫，還有貼心穿搭與是否帶傘建議。讓每天的出門變得更輕鬆！">
+    <meta property="og:title" content="賢賢天氣">
+    <meta property="og:description" content="可愛風格的桃園天氣小工具，提供時段預報、降雨率與穿搭建議。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./icon-v2.png">
+    <meta property="og:url" content="https://你的網站網址">
+    <title>賢賢天氣</title>
     <link rel="icon" type="image/png" href="./icon-v2.png">
     <link rel="apple-touch-icon" href="./icon-v2.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon-v2.png">
@@ -264,7 +270,7 @@
         <p style="color: white; font-weight: bold; margin-top: 20px;">正在觀測雲的流動...</p>
     </div>
     <div class="status-bar">
-        <div class="location-pill">📍 高雄</div>
+        <div class="location-pill">📍 桃園</div>
         <div id="updateTime" class="update-pill">更新中...</div>
     </div>
 
@@ -280,7 +286,7 @@
     </div>
 
     <script>
-        const API_URL = "https://cwa-backend-api.zeabur.app/api/weather/kaohsiung";
+        const API_URL = "https://cwaweather-wenhsi.zeabur.app/api/weather/taoyuan";
 
         function getWeatherIcon(weather) {
             if (!weather) return "🌤️";
